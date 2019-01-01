@@ -19,7 +19,7 @@ class LinkedList:
         else:
             self.head = new_element
     
-    def get_element(self, new_element):
+    def get_element(self, position):
         """Get an element from a given position."""
         counter = 1
         current = self.head
