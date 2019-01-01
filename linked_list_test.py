@@ -20,3 +20,9 @@ print(linked_list.get_element(3).value) # 3
 linked_list.insert(node4, 3)
 print(linked_list.get_element(3).value) # 4
 print(linked_list.get_element(4).value) # 3
+
+# Test delete
+linked_list.delete(1)
+print(linked_list.get_element(1).value) # 2
+print(linked_list.get_element(2).value) # 4
+print(linked_list.get_element(3).value) # 3
