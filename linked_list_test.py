@@ -15,3 +15,8 @@ linked_list.append(node3)
 # Test get_element
 print(linked_list.head.next.next.value) # 3
 print(linked_list.get_element(3).value) # 3
+
+# Test insert
+linked_list.insert(node4, 3)
+print(linked_list.get_element(3).value) # 4
+print(linked_list.get_element(4).value) # 3
