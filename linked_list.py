@@ -32,6 +32,21 @@ class LinkedList:
             counter += 1
         return None
 
+    def insert(self, new_element, position):
+        """Insert a new node at the given position."""
+        counter = 1
+        current = self.head
+        if position > 1:
+            while current and counter < position:
+                if counter == position - 1:
+                    new_element.next = current.next
+                    current.next = new_element
+                current = current.next
+                counter += 1
+        elif position == 1:
+            new_element.next = self.head
+            self.head = new_element
+
 
 
 
