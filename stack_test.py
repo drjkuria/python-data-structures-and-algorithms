@@ -10,3 +10,13 @@ node4 = Node(4)
 
 # Start setting up a Stack
 stack = Stack(node1)
+
+# Test stack functionality
+stack.push(node2)
+stack.push(node3)
+print(stack.pop().value)
+print(stack.pop().value)
+print(stack.pop().value)
+print(stack.pop())
+stack.push(node4)
+print(stack.pop().value)
