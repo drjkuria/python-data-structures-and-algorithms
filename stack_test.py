@@ -7,3 +7,6 @@ node1 = Node(1)
 node2 = Node(2)
 node3 = Node(3)
 node4 = Node(4)
+
+# Start setting up a Stack
+stack = Stack(node1)
