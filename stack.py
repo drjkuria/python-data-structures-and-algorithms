@@ -5,10 +5,14 @@ functionalities built into the Stack."""
 
 from linked_list import LinkedList
 
+class LinkedListStack(LinkedList):
+    def __init__(self, head=None):
+        super().__init__(head=None)
+
 class Stack:
     """Stack representation with push and pop."""
     def __init__(self, top=None):
-        self.linked_list = LinkedList(top)
+        self.linked_list = LinkedListStack(top)
     
     def push(self, new_element):
         """Add a new element at the top of the stack."""
