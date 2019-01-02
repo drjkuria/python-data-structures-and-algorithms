@@ -7,7 +7,7 @@ from linked_list import LinkedList
 
 class LinkedListStack(LinkedList):
     def __init__(self, head=None):
-        super().__init__(head=None)
+        super().__init__(head)
     
     def insert_first(self, new_element):
         """Insert new element as the head of the LinkedListStack."""
