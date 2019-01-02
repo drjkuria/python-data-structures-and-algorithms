@@ -9,3 +9,8 @@ class Stack:
     """Stack representation with push and pop."""
     def __init__(self, top=None):
         self.linked_list = LinkedList(top)
+    
+    def push(self, new_element):
+        """Add a new element at the top of the stack."""
+        self.linked_list.insert_first(new_element)
+        
