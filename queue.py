@@ -13,4 +13,8 @@ class Queue:
         """Return the head element without removing it."""
         return self.storage[0]
     
-    
+    def dequeue(self):
+        """Remove and return the head element."""
+        return self.storage.pop(0)
+
+
