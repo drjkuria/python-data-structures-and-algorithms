@@ -7,3 +7,6 @@ queue.enqueue(3)
 
 # Test peek()
 print(queue.peek()) # 1
+
+# Test dequeue
+print(queue.dequeue())
