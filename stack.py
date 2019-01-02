@@ -8,6 +8,11 @@ from linked_list import LinkedList
 class LinkedListStack(LinkedList):
     def __init__(self, head=None):
         super().__init__(head=None)
+    
+    def insert_first(self, new_element):
+        new_element.next = self.head
+        self.head = new_element
+    
 
 class Stack:
     """Stack representation with push and pop."""
