@@ -10,10 +10,20 @@ class LinkedListStack(LinkedList):
         super().__init__(head=None)
     
     def insert_first(self, new_element):
+        """Insert new element as the head of the LinkedListStack."""
         new_element.next = self.head
         self.head = new_element
     
-
+    def delete_first(self):
+        """Delete the first(head) element in the LinkedList and return it."""
+        if self.head:
+            deleted_element = self.head
+            temp = deleted_element.next
+            self.head = temp
+            return deleted_element
+        else:
+            return None
+        
 class Stack:
     """Stack representation with push and pop."""
     def __init__(self, top=None):
