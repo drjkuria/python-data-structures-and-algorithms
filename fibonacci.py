@@ -25,10 +25,7 @@ def get_fib_recursive(position):
     """Get nth postion fibonacci number recursively."""
     first = 0
     second = 1
-    next_fib = first + second
-    if position == 0:
-        return first
-    elif position == 1:
-        return second
+    if position == 0 or position == 1:
+        return position
     else:
         return get_fib_recursive(position - 1) + get_fib_recursive(position - 2)
