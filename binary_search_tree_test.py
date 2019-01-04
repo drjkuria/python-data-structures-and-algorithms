@@ -9,3 +9,7 @@ tree.insert(2)
 tree.insert(1)
 tree.insert(3)
 tree.insert(5)
+
+# Test search
+print(tree.search(4))
+print(tree.search(6))
