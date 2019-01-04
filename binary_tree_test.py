@@ -10,3 +10,6 @@ tree.root.left.right = Node(5)
 # Test search
 print(tree.search(4)) # True
 print(tree.search(6)) # False
+
+# Test print_tree
+print(tree.print_tree()) # 1-2-4-5-3

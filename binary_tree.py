@@ -17,7 +17,7 @@ class BinaryTree:
     
     def print_tree(self):
         """Print all tree nodes in pre-order traversal."""
-        return preorder_print(self.root, "")[:-1]
+        return self.preorder_print(self.root, "")[:-1]
 
     def preorder_search(self, start, find_val):
         if start:
