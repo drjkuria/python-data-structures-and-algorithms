@@ -7,4 +7,6 @@ tree.root.right = Node(3)
 tree.root.left.left = Node(4)
 tree.root.left.right = Node(5)
 
-
+# Test search
+print(tree.search(4)) # True
+print(tree.search(6)) # False
