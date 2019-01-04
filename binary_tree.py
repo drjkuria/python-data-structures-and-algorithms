@@ -4,3 +4,8 @@ class Node:
         self.value = value
         self.left = None
         self.right = None
+
+class BinaryTree:
+    """Binary tree representation."""
+    def __init__(self, root):
+        self.root = Node(root)
