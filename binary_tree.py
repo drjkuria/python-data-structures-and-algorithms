@@ -19,4 +19,12 @@ class BinaryTree:
         """Print all tree nodes in pre-order traversal."""
         return preorder_print(tree.root, "")[:-1]
 
+    def preorder_search(self, start, find_val):
+        if start:
+            if start.value == find_val:
+                return True
+            else:
+                return self.preorder_search(start.left, find_val) or
+                    self.preorder_search(start.right, find_val)
+    
     
