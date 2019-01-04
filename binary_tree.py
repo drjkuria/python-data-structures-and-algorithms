@@ -13,5 +13,10 @@ class BinaryTree:
     def search(self, find_val):
         """Return true if find_val is in the tree,
         otherwise return false."""
-        return self.pre_order_search(tree.root, find_val)
+        return self.preorder_search(tree.root, find_val)
+    
+    def print_tree(self):
+        """Print all tree nodes in pre-order traversal."""
+        return preorder_print(tree.root, "")[:-1]
+
     
