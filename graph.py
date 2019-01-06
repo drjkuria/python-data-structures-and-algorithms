@@ -17,3 +17,8 @@ class Graph:
         self.nodes = nodes
         self.edges = edges
 
+    def insert_node(self, new_node_val):
+        """insert new node."""
+        new_node = Node(new_node_val)
+        self.nodes.append(new_node)
+    
