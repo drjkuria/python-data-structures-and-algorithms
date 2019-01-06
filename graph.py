@@ -10,3 +10,10 @@ class Edge:
         self.value = value
         self.node_from = node_from
         self.node_to = node_to
+
+class Graph:
+    """A graph representation with edges and nodes and operations."""
+    def __init__(self, nodes=[], edges=[]):
+        self.nodes = nodes
+        self.edges = edges
+
