@@ -42,3 +42,10 @@ class Graph:
         to_found.edges.append(new_edge)
         self.edges.append(new_edge)
 
+    def get_edge_list(self):
+        """Get a list of edges."""
+        edge_list = []
+        for edge_object in self.edges:
+            edge = (edge_object.value, edge_object.node_from.value, edge_object.node_to.value)
+            edge_list.append(edge)
+        return edge_list
