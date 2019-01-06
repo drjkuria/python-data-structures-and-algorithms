@@ -49,3 +49,16 @@ class Graph:
             edge = (edge_object.value, edge_object.node_from.value, edge_object.node_to.value)
             edge_list.append(edge)
         return edge_list
+    
+    def get_adjacency_list(self):
+        """Get adjacency list."""
+        max_index = self.find_max_index()
+        adjacency_list = [None] * (max_index + 1)
+        for egde_object in self.edges:
+            if adjacency_list[edge_object.node_from.value]:
+                adjacency_list[edge_object.node_from.value].append((egde_object.node_to_value, edge_object.value))
+            else:
+                adjacency_list[edge_object.node_from_value] = [(edge_object.node_to.value, egde_object.value)]      
+        return adjacency_list
+
+    
